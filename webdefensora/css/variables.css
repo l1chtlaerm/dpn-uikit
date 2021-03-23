@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('../fonts/Avenir.ttc');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Avenir Black';
+	src: url('../fonts/Avenir-Black.otf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* Scroll to Top */
+.scrolltotop {
+	height: 48px;
+	width: 48px;
+	border-color: #999;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	color: #999;
+	color: rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	text-align: center;
+}
+.scrolltotop:hover {
+	box-shadow: 1px 1px 5px #999;
+	text-shadow: 1px 1px 5px #999;
+}
+/* Autoridades */
+#autoridades h4 {
+	font-size: 20px;
+	font-weight: bold;
+	color: rgba(133,106,71,1.00);
+}
+#autoridades .centrado {
+	text-align: center;
+}
+#autoridades .versa {
+	font-variant: small-caps;
+	font-size: 28px;
+	font-weight: bold;
+	color: rgba(133,106,71,1.00);
+}
+#autoridades .underlined {
+	border-bottom: solid 1px rgba(0,80,146,1.00);
+}
+/* ----- */
+#article-content .articleDate {
+	margin-bottom: 10px;
+	margin-left: -10px;
+	margin-right: -10px;
+    border-top: 1px solid #be965d;
+    border-bottom: 1px solid #be965d;
+}
+#article-content .articleDate .fechaPub {
+
+}
+#article-content .articleDate .fechaPub p {
+	color: #7A7A7A;
+	font-size: 14px;
+	margin-left: 10px;
+	padding: 5px 5px;
+	margin-bottom: 0;
+}
+/* Curso Violencia de G�nero */
+#cursoViolenciaGenero {
+	color: #888;
+}
+#cursoViolenciaGenero .panel-heading{
+	color: #be965d;
+	font-weight: bolder;
+}
+#cursoViolenciaGenero .panel-heading p{
+	font-size: 14px;
+	color: #888;
+}
+#cursoViolenciaGenero .panel-heading icon{
+	color: #000;
+}
+#programas,
+podcasts {
+	padding-top: 0px;
+}
+#programas h4 {
+	color:#fff;
+	font-family:'Roboto';
+	font-weight: 700;
+}
+#programas .programas-item{
+	background-color: #be965d; 
+	padding: 24px 50px;
+	margin-bottom:10px;
+}
+#programas .programas-item a:hover,
+#programas .programas-item a:focus{
+	text-decoration:none;
+}
+#programas .programas-item a:hover h3,
+#programas .programas-item a:focus h3,
+#programas .programas-item a:hover p,
+#programas .programas-item a:focus p{
+	color: #084d6f;
+	transition: ease 0.3s;
+}
+#programas .programas-item a h3{
+	color:#fff;
+	font-family:'Roboto';
+	font-weight: 700;
+	transition: ease 0.3s;
+	margin:0;
+}
+
+#programas .programas-item h3{
+	color:#fff;
+	font-family:'Roboto';
+	font-weight: 700;
+	transition: ease 0.3s;
+	margin:0;
+}
+
+#programas .programas-item a p{
+	color:#fff;
+	font-family:'Roboto';
+	font-weight: 400;
+	transition: ease 0.3s;
+	margin:0;
+}
+/* Formulario transparencia */
+#transparencia .contenido, #transparencia form label {
+	color: #888;
+}
+#transparencia form input, #transparencia form textarea {
+	margin-bottom: 15px;
+}
+#transparencia form textarea {
+	height: 100px;
+}
+/* Programas Areas */
+#programas-item-area div {
+	margin-bottom: 5px;
+	box-shadow: 2px 2px 5px #888;
+	border-radius: 5px 15px 15px;
+}
+#programas-item-area a h4 {
+	color: #FFF;
+}
+#programas-item-area a,
+#programas-item-area a:hover h4,
+#programas-item-area a:focus h4 {
+	text-decoration: none;
+	color: #084d6f;
+}
+#programas-item-area .programas-item-area-identidad {
+	background-color: #f16b2e;
+}
+#programas-item-area .programas-item-area-salud {
+	background-color: #2197d4;
+}
+#programas-item-area .programas-item-area-ambiente {
+	background-color: #5bb947;
+}
+#programas-item-area .programas-item-area-sspp {
+	background-color: #f9c416;
+}
+.btn-info {
+	color: #ffffff;
+	background-color: #0b70a0;
+	border-color: #0b70a0;
+}
+podcasts legend h3 {
+	font-family: 'Droid Serif',serif;
+	color: #084c6e;
+}
+podcasts h4 {
+	font-weight: bold;
+	color: #ca9f63;
+}
+podcasts audio {
+	width: 100%;
+	height: 30px;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	transition:all 0.5s linear;
+	-moz-box-shadow: 2px 2px 4px 0px #006773;
+	-webkit-box-shadow:  2px 2px 4px 0px #006773;
+	box-shadow: 2px 2px 4px 0px #006773;
+}
+podcasts .podcast {
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}

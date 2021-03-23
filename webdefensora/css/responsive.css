@@ -1,0 +1,1388 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
+@media (min-width:768px){
+	header{}
+	header .container{
+		position: relative;
+	}
+	header .share-links{
+		padding-top: 18px;
+		z-index: 400;
+		text-align: right;
+		float: right;
+	}
+	.lft{
+		margin-left: 10px;
+	}
+	header .navbar{
+		min-height: 40px;
+	}
+	header .navbar-default{
+		background-color: transparent;
+	}
+	header .navbar-default .container-fluid{
+		padding: 0;
+	}
+	header .navbar-default .container-fluid .navbar-header{
+		position: absolute;
+	}
+	header .navbar-default .container-fluid .navbar-collapse{
+		padding: 0;
+		text-align: center;
+		background-color: transparent;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav{
+		float:none;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav>li{
+		float: none;
+		display: inline-block;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav .open>a:focus,
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav .open>a:hover{
+		color: #1f95d2;
+		background-color: inherit;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu{
+		border-radius: 4px;
+		border-color: #ccc;
+		margin-top: -5px;
+		margin-left: -15px;
+		padding: 0;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li a{
+		padding: 9px 15px;
+		position: relative;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li a:hover,
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li a:focus{
+		background-color: #fff;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li a:hover::before,
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li a:focus::before{
+		content: '';
+		position: absolute;
+		bottom: 2px;
+		left: 2px;
+		border-top: 15px solid transparent;
+		border-right: 0 solid transparent;
+		border-left: 15px solid #ca9f63;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu .divider{
+		margin: 0;
+	}
+	#menu-areas,
+	#article-content-areas,
+	#contacto-areas {}
+	.carro{
+		padding-top:13%;
+	}
+	#section-slide img{
+		width:100%;
+	}
+	#section-slide .carousel .item .container{
+		position:relative;
+	}
+	#section-slide .carousel .item .container .carousel-caption{
+		display:block;
+		background-color:rgba(0,0,0,0.4);
+		color:#fff;
+		position:absolute;
+		padding:15px;
+		right:60%;
+		left:30px;
+	}
+	#section-slide .carousel .item .container .carousel-caption p{
+		font-weight:300;
+	}
+	#article-content .redes, #article-content .articleMedia{
+		margin-top: 15px;
+		padding-top: 15px;
+	}
+	#article-content .redes .fb{
+		overflow:hidden;
+	}
+	#menu-areas.mg-bottom-big{
+		margin-bottom:60px;
+	}
+	#menu-areas .container .row #submenu-sa-lg ul li,
+	#menu-areas .container .row #submenu-sa-xs ul li,
+	#menu-areas .container .row #submenu-ma-lg ul li,
+	#menu-areas .container .row #submenu-ma-xs ul li {
+		padding:0 40px;
+	}
+	.redesSociales img{
+		width:6% !important;
+	}
+	.i_icon{
+	font-size: 0.1em;
+    color: transparent;
+	}
+}
+
+@media (min-width:992px){
+	.col-md-2 {
+		width: 13.666667% !important;
+	}
+	.area-cnt {
+		font-size: 9px !important;
+	}
+	header .share-links{
+		padding-top:40px;
+		z-index:400;
+		text-align: right;
+	}
+	.mb-big{
+		margin-bottom:60px;
+	}
+	.mb-very-big{
+		margin-bottom:100px;
+	}
+	#menu-areas{
+		margin-top:0px;
+	}
+	#menu-areas .container .row .area-item{
+	}
+	#menu-areas .container .row .area-item::before{
+		content:'';
+		position:absolute;
+		right:0;
+		width:1px;
+		height:118px;
+		top:0;
+	}
+	#menu-areas .container .row .area-item::after{
+		content:'';
+		border-left:10px solid transparent;
+		border-top:30px solid transparent;
+		position:absolute;
+		right:0;
+		bottom:-4px;
+		display:none;
+	}
+	#menu-areas .container .row .area-item:hover::after,
+	#menu-areas .container .row .area-item:focus::after{
+		display:block;
+	}
+	#menu-areas .container .row #area-sse{
+	}
+	#menu-areas .container .row #area-sse::before{
+		display:none;
+	}
+	#sitemap .row{
+		text-align:center;
+	}
+	#sitemap .item-site{
+		position:relative;
+		display:inline-block;
+		float:none;
+		width:auto;
+		padding:5px 20px;
+		vertical-align:top;
+	}
+	#sitemap .item-site::after{
+		content:'';
+		position:absolute;
+		right:0;
+		top:15px;
+		height:18px;
+		width:1px;
+		background-color:#ca9f63;
+	}
+	#sitemap .item-site:last-child::after{
+		display:none;
+	}
+	#section-slide .carousel .item .container .carousel-caption{
+		padding:16px;
+		margin-right:60px;
+	}
+	#section-slide .carousel .item .container .carousel-caption p{
+		font-size:18px;
+	}
+	#links{
+		padding:40px 0;
+	}
+	#article-content .summary h3{
+		font-size:25px;
+	}
+	#article-content .summary p{
+		font-size:18px;
+	}
+	#content form textarea{
+		height:140px;
+	}
+	.redesSociales img {
+		width:6% !important;
+	}
+	.Pro #Pro-B {
+		width: 152px !important;
+	}
+}
+
+@media (max-width:767px){
+	.glyphicon-chevron-left {
+		display: none !important;
+	}
+	.glyphicon-chevron-right {
+		display: none !important;
+	}
+	.area-icons-right {
+		font-size: 14px !important;
+	}
+	#menu-areas .container .row .area-menu-active{
+		position:inherit;
+		display:block;
+		padding:0;
+	}
+	#menu-areas .container .row #submenu-sa-lg .sub-areas-mobile li,
+	#menu-areas .container .row #submenu-sa-xs .sub-areas-mobile li{
+		border-right-color:#15668f;
+	}
+	#menu-areas .container .row #submenu-sa-lg .divider,
+	#menu-areas .container .row #submenu-sa-xs .divider{
+		border-bottom-color:#1875a6;
+	}
+	#menu-areas .container .row #submenu-ma-lg .sub-areas-mobile li,
+	#menu-areas .container .row #submenu-ma-xs .sub-areas-mobile li{
+		border-right-color:#568e2d;
+	}
+	#menu-areas .container .row #submenu-ma-lg .divider,
+	#menu-areas .container .row #submenu-ma-xs .divider{
+		border-bottom-color:#62a133;
+	}
+	#menu-areas .container .row #submenu-sp-lg .sub-areas-mobile li,
+	#menu-areas .container .row #submenu-sp-xs .sub-areas-mobile li{
+		border-right-color:#f4a737;
+	}
+	#menu-areas .container .row #submenu-sp-lg .divider,
+	#menu-areas .container .row #submenu-sp-xs .divider{
+		border-bottom-color:#f5b250;
+	}
+	#menu-areas .container .row #submenu-sp-lg .sub-areas-mobile li:last-child,
+	#menu-areas .container .row #submenu-sp-xs .sub-areas-mobile li:last-child{
+		width:48%;
+	}
+	#menu-areas .container .row #submenu-sse-lg .sub-areas-mobile li,
+	#menu-areas .container .row #submenu-sse-xs .sub-areas-mobile li{
+		border-right-color:#747373;
+	}
+	#menu-areas .container .row #submenu-sse-lg .divider,
+	#menu-areas .container .row #submenu-sse-xs .divider{
+		border-bottom-color:#d1850a;
+	}
+	#menu-areas .container .row #submenu-sse-lg .sub-areas-mobile li:last-child,
+	#menu-areas .container .row #submenu-sse-xs .sub-areas-mobile li:last-child{
+		width:48%;
+	}
+	#menu-areas .container .row #submenu-promocion-lg .sub-areas-mobile li,
+	#menu-areas .container .row #submenu-promocion-xs .sub-areas-mobile li{
+		border-right-color:#01426b;
+	}
+	#menu-areas .container .row #submenu-promocion-lg .divider,
+	#menu-areas .container .row #submenu-promocion-xs .divider{
+		border-bottom-color:#01426b;
+	}
+	#menu-areas .container .row #submenu-vulnerables-lg .sub-areas-mobile li,
+	#menu-areas .container .row #submenu-vulnerables-xs .sub-areas-mobile li{
+		padding: 10px;
+		vertical-align:middle;
+		border-right-style:solid;
+		border-right-width:1px;
+		border-right-color:#be131a;
+	}
+	#menu-areas .container .row #submenu-vulnerables-lg .sub-areas-mobile li:nth-child(2),
+	#menu-areas .container .row #submenu-vulnerables-xs .sub-areas-mobile li:nth-child(2),
+	#menu-areas .container .row #submenu-vulnerables-lg .sub-areas-mobile li:nth-child(5),
+	#menu-areas .container .row #submenu-vulnerables-xs .sub-areas-mobile li:nth-child(5),
+	#menu-areas .container .row #submenu-vulnerables-lg .sub-areas-mobile li:nth-child(8),
+	#menu-areas .container .row #submenu-vulnerables-xs .sub-areas-mobile li:nth-child(8){
+		border-right-color:transparent;
+	}
+	#menu-areas .container .row .area-menu .sub-areas-mobile li{
+		width:48% !important;
+		vertical-align:middle;
+		border-right-style:solid;
+		border-right-width:1px;
+		padding:10px;
+	}
+	#menu-areas .container .row .area-menu .sub-areas-mobile li::after{
+		display:none;
+	}
+	#menu-areas .container .row .area-menu .sub-areas-mobile li:nth-of-type(3n+3),
+	#menu-areas .container .row .area-menu .sub-areas-mobile li:nth-of-type(3n+2),
+	#menu-areas .container .row .area-menu .sub-areas-mobile li:last-child{
+		border-right:none;
+	}
+	#menu-areas .container .row .area-menu .sub-areas-mobile li:last-child{
+		width:100%;
+	}
+	#promocion .sub-areas-mobile li:last-child{
+		width:48% !important;
+	}
+	#menu-areas .container .row .area-menu .sub-areas-mobile .divider{
+		width:97% !important;
+		border-right:none;
+		border-bottom-style:solid;
+		border-bottom-width:1px;
+		padding:0;
+		margin:0 auto;
+	}
+	.topNoc{
+		padding-top:14%;
+	}
+	.carro{
+		padding-top:14%;
+	}
+	.redesSociales img {
+		width:6% !important;
+	}
+	.area-icons-left {
+		margin-top: 16px !important;
+		min-width: 55px;
+	}
+	.area-text-right {
+		font-size: 16px !important;
+		margin-top: 20px !important;
+	}
+	/* Efecto */
+	#Grupo-B {
+		width:104%;
+		background: linear-gradient(to right, #E3223D 50%, #C72120 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	#Grupo-B:hover {
+		background-position: right bottom;
+	}
+	#Grupo-B a {
+		color: white;
+	}
+	.Identidad #Identidad-B {
+		width:104%;
+		background: linear-gradient(to right, #f16b2e 50%, #E94000 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	.Identidad #Identidad-B:hover {
+		background-position: right bottom;
+	}
+	.Identidad #Identidad-B a {
+		color: white;
+	}
+	.Salud #Salud-B {
+		width:104%;
+		background: linear-gradient(to right, #2197D4 50%, #14699E 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	.Salud #Salud-B:hover {
+		background-position: right bottom;
+	}
+	.Salud #Salud-B a {
+		color: white;
+	}
+	.Medio #Medio-B {
+		width:104%;
+		background: linear-gradient(to right, #5BB947 50%, #4BA100 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	.Medio #Medio-B:hover {
+		background-position: right bottom;
+	}
+	.Medio #Medio-B a {
+		color: white;
+	}
+	.Servicios #Servicios-B {
+		width:104%;
+		background: linear-gradient(to right, #F9C416 50%, #F89000 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	.Servicios #Servicios-B:hover {
+		background-position: right bottom;
+	}
+	.Servicios #Servicios-B a {
+		color: white;
+	}
+	.Seguridad #Seguridad-B {
+		width:104%;
+		background: linear-gradient(to right, #999999 50%, #555555 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	.Seguridad #Seguridad-B:hover {
+		background-position: right bottom;
+	}
+	.Seguridad #Seguridad-B a {
+		color: white;
+	}
+	.Pro #Pro-B {
+		width:104%;
+		background: linear-gradient(to right, #17608D 50%, #113277 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+		margin-right: -15px;
+	}
+	.Pro #Pro-B:hover {
+		background-position: right bottom;
+	}
+	.Pro #Pro-B a {
+		color: white;
+	}
+}
+
+@media (min-width:768px) and (max-width:991px){
+	.area-icons-left {
+		margin-top: 14px !important;
+		width: 55px;
+	}
+	.area-text-right {
+		font-size: 16px !important;
+		margin-top: 19px !important;
+	}
+	.area-menu-active {
+		position: relative !important;
+	}
+	header::after{
+		height:105px;
+		background-size:700px;
+	}
+	header .container{
+		height:65px;
+	}
+	header .navbar-default .container-fluid{
+		width:750px;
+	}
+	header .navbar-default .container-fluid .navbar-header{
+		top:-60px;
+	}
+	header .navbar-default .container-fluid .navbar-header .navbar-brand{
+		padding:10px;
+		margin-left:10px;
+		height:70px;
+		background-size:66px;
+		width:350px;
+	}
+	header .navbar-default .container-fluid .navbar-header .navbar-brand .logo-title-blue{
+		margin-left:60px;
+		margin-top:5px;
+		background-size:225px;
+	}
+	header .navbar-default .container-fluid .navbar-collapse{
+		width:750px;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav>li a{
+		padding:10px 13px;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li a{
+		padding:9px 15px;
+	}
+	#menu-areas{
+		margin-bottom:40px;
+	}
+	#menu-areas .container .row{
+		position:relative;
+	}
+	#menu-areas .container .row .area-item{
+		border-bottom-width:6px;
+	}
+	#menu-areas .container .row #area-sse,#menu-areas .container .row #area-sa{
+		border-top-right-radius:4px;
+	}
+	#menu-areas .container .row #submenu-sp-lg ul li,
+	#menu-areas .container .row #submenu-sp-xs ul li{
+		padding:0 19px;
+	}
+	#banners .banner-item{
+		padding:10px;
+	}
+	#banners .banner-item .banner-img{
+		padding:0;
+		height:66px;
+		margin-right:32px;
+	}
+	#banners .banner-item .banner-img img{
+		width:121px;
+		margin-left:-10px;
+		margin-top:-10px;
+	}
+	#banners .banner-item a h3{
+		font-size:20px;
+	}
+	#banners .banner-item a p{
+		font-size:13px;
+	}
+	#licitaciones .licitaciones-item{
+		padding:10px;
+	}
+	#licitaciones .licitaciones-item .licitaciones-img{
+		padding:0;
+		height:66px;
+		margin-right:32px;
+	}
+	#licitaciones .licitaciones-item .licitaciones-img img{
+		width:121px;
+		margin-left:-10px;
+		margin-top:-10px;
+	}
+	#licitaciones .licitaciones-item a h3{
+		font-size: 15px;
+	}
+	#licitaciones .licitaciones-item a p{
+		font-size: 13px;
+	}
+	#noticias .container .row .col-xs-12{
+		padding:0;
+	}
+	#noticias .container .row .col-xs-12 .item:nth-child(2){
+		border-left:2px solid #eee;
+		border-right:2px solid #eee;
+	}
+	#noticias .container .row .col-xs-12 .item .big-title{
+		font-size:22px;
+		line-height:26px;
+	}
+	#redes .item{
+		height:300px;
+	}
+	#redes .tw{
+		border-left:2px solid #eee;
+		border-right:2px solid #eee;
+	}
+	#redes .fb iframe{
+		width:230px;
+	}
+	#redes .nw form{
+		padding-top:15px;
+	}
+	#redes .nw form input{
+		margin-bottom:25px;
+	}
+	#contacto .title{
+		padding-right:0;
+	}
+	#contacto .datos{
+		margin-top:0;
+		padding:7px;
+	}
+	.topNoc{
+		padding-top:11%;
+	}
+	.carro{
+		padding-top:12%;
+	}
+	.redesSociales img {
+		width:3% !important;
+	}
+	.redesSocialesMenu {
+		display:none !important;
+	}
+	/* Efecto */
+	#Grupo-B {
+		width: 102%;
+		background: linear-gradient(to right, #E3223D 50%, #C72120 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	#Grupo-B:hover {
+		background-position: right bottom;
+	}
+	#Grupo-B a {
+		color: white;
+	}
+	.Identidad #Identidad-B {
+		width: 102%;
+		background: linear-gradient(to right, #f16b2e 50%, #E94000 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	.Identidad #Identidad-B:hover {
+		background-position: right bottom;
+	}
+	.Identidad #Identidad-B a {
+		color: white;
+	}
+	.Salud #Salud-B {
+		width: 102%;
+		background: linear-gradient(to right, #2197D4 50%, #14699E 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	.Salud #Salud-B:hover {
+		background-position: right bottom;
+	}
+	.Salud #Salud-B a {
+		color: white;
+	}
+	.Medio #Medio-B {
+		width: 102%;
+		background: linear-gradient(to right, #5BB947 50%, #4BA100 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	.Medio #Medio-B:hover {
+		background-position: right bottom;
+	}
+	.Medio #Medio-B a {
+		color: white;
+	}
+	.Servicios #Servicios-B {
+		width: 102%;
+		background: linear-gradient(to right, #F9C416 50%, #F89000 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	.Servicios #Servicios-B:hover {
+		background-position: right bottom;
+	}
+	.Servicios #Servicios-B a {
+		color: white;
+	}
+	.Seguridad #Seguridad-B {
+		width: 102%;
+		background: linear-gradient(to right, #999999 50%, #555555 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	.Seguridad #Seguridad-B:hover {
+		background-position: right bottom;
+	}
+	.Seguridad #Seguridad-B a {
+		color: white;
+	}
+	.Pro #Pro-B {
+		width: 102%;
+		background: linear-gradient(to right, #17608D 50%, #113277 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+		margin-right: -15px;
+	}
+	.Pro #Pro-B:hover {
+		background-position: right bottom;
+	}
+	.Pro #Pro-B a {
+		color: white;
+	}
+}
+
+@media (min-width:992px) and (max-width:1199px){
+	header::after{
+		height:135px;
+		background-size:700px;
+	}
+	header .container{
+		height:95px;
+	}
+	header .navbar-default .container-fluid{
+		width:970px;
+	}
+	header .navbar-default .container-fluid .navbar-header{
+		top:-60px;
+	}
+	header .navbar-default .container-fluid .navbar-header .navbar-brand{
+		position:absolute;
+		z-index:300;
+		padding:0;
+		margin:0;
+		height:160px;
+		background-size:166px;
+		width:170px;
+		top:-15px;
+	}
+	header .navbar-default .container-fluid .navbar-header .navbar-brand .logo-title-blue{
+		margin-left:170px;
+		margin-top:30px;
+		background-size:325px;
+		position:absolute;
+		width:350px;
+	}
+	header .navbar-default .container-fluid .navbar-collapse{
+		width:970px;
+		text-align:right;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav{
+		position:absolute;
+		right:0;
+		z-index:400;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav>li a{
+		padding:10px 17px;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li a{
+		padding:9px 15px;
+	}
+	#content .video{
+		margin-top:40px;
+	}
+	#content .video iframe{
+		height:280px;
+	}
+	#banners .row{
+		padding:0 15px;
+	}
+	#banners .banner-item{
+		padding:10px;
+	}
+	#banners .banner-item .banner-img{
+		padding:0;
+		height:66px;
+		margin-right:12px;
+	}
+	#banners .banner-item .banner-img img{
+		width:121px;
+		margin-left:-10px;
+		margin-top:-10px;
+	}
+	#banners .banner-item a h3{
+		font-size:20px;
+	}
+	#banners .banner-item a p{
+		font-size:13px;
+	}
+	#banners .banner-item:first-child{
+		border-right:7.5px solid #eee;
+	}
+	#banners .banner-item:last-child{
+		border-left:7.5px solid #eee;
+	}
+	#licitaciones .row{
+		padding:0 15px;
+	}
+	#licitaciones .licitaciones-item{
+		padding:10px;
+	}
+	#licitaciones .licitaciones-item .licitaciones-img{
+		padding:0;
+		height:66px;
+		margin-right:12px;
+	}
+	#licitaciones .licitaciones-item .licitaciones-img img{
+		width:121px;
+		margin-left:-10px;
+		margin-top:-10px;
+	}
+	#licitaciones .licitaciones-item a h3{
+		font-size: 15px;
+	}
+	#licitaciones .licitaciones-item a p{
+		font-size:13px;
+	}
+	#licitaciones .licitaciones-item:first-child{
+		border-right:7.5px solid #eee;
+	}
+	#licitaciones .licitaciones-item:last-child{
+	}
+	#noticias .container .row{
+		padding:0 15px;
+	}
+	#noticias .container .row .col-xs-12{
+		padding:0;
+	}
+	#noticias .container .row .col-xs-12 .item:first-child{
+		border-right:7.5px solid #eee;
+	}
+	#noticias .container .row .col-xs-12 .item:nth-child(2){
+		border-left:7.5px solid #eee;
+		border-right:7.5px solid #eee;
+	}
+	#noticias .container .row .col-xs-12 .item:last-child{
+		border-left:7.5px solid #eee;
+	}
+	#redes .row{
+		padding:0 15px;
+	}
+	#redes .item{
+		height:290px;
+	}
+	#redes .item h3{
+		text-align:center;
+	}
+	#redes .tw{
+		border-left:7.5px solid #eee;
+		border-right:7.5px solid #eee;
+	}
+	#redes .tw h3{
+		margin-bottom:15px;
+	}
+	#redes .fb{
+		border-right:7.5px solid #eee;
+	}
+	#redes .fb iframe{
+		width:285px;
+		height:120px;
+	}
+	#redes .nw{
+		border-left:7.5px solid #eee;
+	}
+	#redes .nw h3{
+		margin-bottom:25px;
+	}
+	#redes .nw form{
+		padding-top:15px;
+	}
+	#redes .nw form input{
+		margin-bottom:25px;
+	}
+	#contacto .logo img{
+		position:absolute;
+		width:230px;
+		max-width:none;
+		z-index:200;
+		left:-30px;
+		top:-25px;
+	}
+	#contacto .title{
+		padding-right:0;
+		padding-left:30px;
+	}
+	#menu-areas .container .row .area-menu{
+		width:809px;
+		left:0;
+		right:0;
+		margin:0 auto;
+	}
+	.topNoc{
+		padding-top:13%;
+	}
+	.carro{
+		padding-top:13%;
+	}
+	.redesSociales img {
+		width:6% !important;
+	}
+	.redesSocialesMenu {
+		display:none !important;
+	}
+	.area-item {
+		height: 84px !important;
+	}
+	.area-cnt,
+	.area-icons-left {
+		text-align: center !important;
+		float: none !important;
+		margin-right: 0px !important;
+		margin-left: -8px;
+	}
+	.area-icons-right {
+		font-size: 14px; text-align: center;
+	}
+	/* Efecto */
+	#Grupo-B {
+		width:117px;
+		background: linear-gradient(to right, #E3223D 50%, #C72120 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	#Grupo-B:hover {
+		background-position: right bottom;
+	}
+	#Grupo-B a {
+		color: white;
+	}
+	.Identidad #Identidad-B {
+		width:117px;
+		background: linear-gradient(to right, #f16b2e 50%, #E94000 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	.Identidad #Identidad-B:hover {
+		background-position: right bottom;
+	}
+	.Identidad #Identidad-B a {
+		color: white;
+	}
+	.Salud #Salud-B {
+		width:118px;
+		background: linear-gradient(to right, #2197D4 50%, #14699E 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	.Salud #Salud-B:hover {
+		background-position: right bottom;
+	}
+	.Salud #Salud-B a {
+		color: white;
+	}
+	.Medio #Medio-B {
+		width:117px;
+		background: linear-gradient(to right, #5BB947 50%, #4BA100 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	.Medio #Medio-B:hover {
+		background-position: right bottom;
+	}
+	.Medio #Medio-B a {
+		color: white;
+	}
+	.Servicios #Servicios-B {
+		width:118px;
+		background: linear-gradient(to right, #F9C416 50%, #F89000 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	.Servicios #Servicios-B:hover {
+		background-position: right bottom;
+	}
+	.Servicios #Servicios-B a {
+		color: white;
+	}
+	.Seguridad #Seguridad-B {
+		width:118px;
+		background: linear-gradient(to right, #999999 50%, #555555 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+	}
+	.Seguridad #Seguridad-B:hover {
+		background-position: right bottom;
+	}
+	.Seguridad #Seguridad-B a {
+		color: white;
+	}
+	.Pro #Pro-B {
+		width:117px;
+		background: linear-gradient(to right, #17608D 50%, #113277 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		height: 100%;
+		margin-right: -15px;
+	}
+	.Pro #Pro-B:hover {
+		background-position: right bottom;
+	}
+	.Pro #Pro-B a {
+		color: white;
+	}
+}
+/*----- LG -----*/
+@media (min-width:1200px){ 
+	header::after{
+		height:185px;
+		background-size:1200px;
+	}
+	header .container{
+		height:120px;
+	}
+	header .navbar-default .container-fluid{
+		width:1170px;
+	}
+	header .navbar-default .container-fluid .navbar-header{
+		top:-60px;
+	}
+	header .navbar-default .container-fluid .navbar-header .navbar-brand{
+		position:absolute;
+		z-index:300;
+		padding:0;
+		height:126px;
+		background-size:130px;
+		width:190px;
+		top:-47px;
+	}
+	header .navbar-default .container-fluid .navbar-header .navbar-brand .logo-title-blue{
+		margin-left:140px;
+		margin-top:36px;
+		background-size:320px;
+		position:absolute;
+		width:327px;
+		height:45px;
+	}
+	header .navbar-default .container-fluid .navbar-collapse{
+		width:1170px;
+		text-align:right;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav{
+		position:absolute;
+		right:0;
+		z-index:400;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav>li a{
+		padding:10px 22px;
+		font-size:15px;
+	}
+	header .navbar-default .container-fluid .navbar-collapse .navbar-nav .dropdown .dropdown-menu li a{
+		padding:9px 15px;
+	}
+	#banners .row{
+		padding:0 15px;
+	}
+	#banners .banner-item{
+		padding:10px;
+	}
+	#banners .banner-item .banner-img{
+		padding:0;
+		height:66px;
+		margin-right:12px;
+	}
+	#banners .banner-item .banner-img img{
+		width:121px;
+		margin-left:-10px;
+		margin-top:-10px;
+	}
+	#banners .banner-item a h3{
+		font-size:28px;
+	}
+	#banners .banner-item a p{
+		font-size:13px;
+	}
+	#banners .banner-item:first-child{
+		border-right:15px solid #eee;
+	}
+	#banners .banner-item:last-child{
+		border-left:15px solid #eee;
+	}
+	#licitaciones .licitaciones-item .banner-img{
+		padding:0;
+		height:66px;
+		margin-right:12px;
+	}
+	#licitaciones .licitaciones-item .banner-img img{
+		width:121px;
+		margin-left:-10px;
+		margin-top:-10px;
+	}
+	#licitaciones .licitaciones-item a h3{
+		font-size: 20px;
+	}
+	#licitaciones .licitaciones-item a p{
+		font-size:13px;
+	}
+	#noticias{
+		padding-bottom:15px;
+	}
+	#noticias .container .row{
+		padding:0 15px;
+	}
+	#noticias .container .row .col-xs-12{
+		padding:0;
+	}
+	#noticias .container .row .col-xs-12 .item{
+		max-width:inherit;
+	}
+	#noticias .container .row .col-xs-12 .item:first-child{
+		border-right:15px solid #eee;
+	}
+	#noticias .container .row .col-xs-12 .item:nth-child(2){
+		border-left:15px solid #eee;
+		border-right:15px solid #eee;
+	}
+	#noticias .container .row .col-xs-12 .item:last-child{
+		border-left:15px solid #eee;
+	}
+	#noticias.category .col-xs-12:first-child{
+		margin-bottom:15px;
+	}
+	#menu-areas .container .row .area-menu{
+		width:976px;
+		left:0;
+		right:0;
+		margin:0 auto;
+	}
+	#menu-areas .container .row #submenu-vulnerables-lg.area-menu,
+	#menu-areas .container .row #submenu-vulnerables-xs.area-menu {
+		width: 1100px;
+		left:0;
+		right:0;
+		margin:0 auto;
+	}
+	#menu-areas .container .row .area-menu ul li{
+		padding:0 45px;
+	}
+	#menu-areas .container .row #submenu-vulnerables-lg.area-menu ul li,
+	#menu-areas .container .row #submenu-vulnerables-xs.area-menu ul li{
+		padding:0 8px;
+	}
+	#redes{
+		padding-top:30px;
+	}
+	#redes .row{
+		padding:0 15px;
+	}
+	#redes .item{
+		height:290px;
+		max-width:inherit;
+	}
+	#redes .item h3{
+		text-align:center;
+	}
+	#redes .tw{
+		border-left:15px solid #eee;
+		border-right:15px solid #eee;
+	}
+	#redes .tw h3{
+		margin-bottom:15px;
+	}
+	#redes .fb{
+		border-right:15px solid #eee;
+	}
+	#redes .fb iframe{
+		width:355px;
+	}
+	#redes .nw{
+		border-left:15px solid #eee;
+	}
+	#redes .nw h3{
+		margin-bottom:25px;
+	}
+	#redes .nw form{
+		padding-top:15px;
+	}
+	#redes .nw form input{
+		margin-bottom:25px;
+	}
+	#links .link-item{
+		width: 113px;
+	}
+	#contacto{
+		padding-top:5px;
+	}
+	#contacto .logo img{
+		position:absolute;
+		width:230px;
+		max-width:none;
+		z-index:200;
+		left:-30px;
+		top:-25px;
+	}
+	#contacto .title img{
+		max-width:400px;
+	}
+	#contacto .title .share-links{
+		text-align:left;
+	}
+	#contacto .title .share-links a icon{
+		margin:0 5px;
+	}
+	#content .contact-container{
+		padding-left:40px;
+	}
+	#content .resoluciones a h3{
+		margin:45px 0;
+	}
+	#content .resoluciones .icon{
+		height:106px;
+		padding-top:25px;
+	}
+	#content .resoluciones .icon icon{
+		font-size:65px;
+	}
+	#section-slide .carousel .item .container .carousel-caption{
+		padding:20px;
+		margin-right:80px;
+	}
+	.topNoc{
+		padding-top:169.4px;
+	}
+	.carro{
+		padding-top:160px;
+	}
+	.redesSociales img {
+		width:4% !important;
+	}
+	.redesSocialesMenu {
+		display:none !important;
+	}
+	/*----- Header Scroll -----*/
+	#header-scroll {
+		-ms-transition:     all 0.3s ease-out;
+		-moz-transition:    all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		-o-transition:      all 0.3s ease-out;
+		transition:         all 0.3s ease-out;
+	}
+	#header-scroll.small {
+		height: 70px;
+		line-height: 35px;
+		-ms-transition:     all 0.3s ease-out;
+		-moz-transition:    all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		-o-transition:      all 0.3s ease-out;
+		transition:         all 0.3s ease-out;
+	}
+	#header-scroll.small .redesSociales{
+		display: none;
+	}
+	#header-scroll.small .sarasa{
+		top: -100px;
+		-ms-transition:     all 0.3s ease-out;
+		-moz-transition:    all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		-o-transition:      all 0.3s ease-out;
+		transition:         all 0.3s ease-out;
+	}
+
+	#header-scroll.small .alala{
+		background-size: 100px;
+		top: 50px;
+		-ms-transition:     all 0.3s ease-out;
+		-moz-transition:    all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		-o-transition:      all 0.3s ease-out;
+		transition:         all 0.3s ease-out;
+	}
+	#header-scroll.small .polola{
+		margin-left: 110px;
+		margin-top: 24px;
+		background-size: 200px;
+		-ms-transition:     all 0.3s ease-out;
+		-moz-transition:    all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		-o-transition:      all 0.3s ease-out;
+		transition:         all 0.3s ease-out;
+	}
+	/*----- Header Scroll FIN -----*/
+	.carroleft {
+		margin-top:162px;
+	}
+	.carroright {
+		margin-top:162px;
+	}
+	.col-md-2 {
+		width: 14.286% !important;
+	}
+	.area-icons-right {
+		font-size: 14px !important;
+	}
+	/* Efecto */
+	#Grupo-B {
+		width:152px;
+		background: linear-gradient(to right, #E3223D 50%, #C72120 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		padding: 9px;
+	}
+	#Grupo-B:hover {
+		background-position: right bottom;
+	}
+	#Grupo-B a {
+		color: white;
+	}
+	.Identidad #Identidad-B {
+		width:151px;
+		background: linear-gradient(to right, #f16b2e 50%, #E94000 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		padding: 9px;
+	}
+	.Identidad #Identidad-B:hover {
+		background-position: right bottom;
+	}
+	.Identidad #Identidad-B a {
+		color: white;
+	}
+	.Salud #Salud-B {
+		width:152px;
+		background: linear-gradient(to right, #2197D4 50%, #14699E 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		padding: 9px;
+	}
+	.Salud #Salud-B:hover {
+		background-position: right bottom;
+	}
+	.Salud #Salud-B a {
+		color: white;
+	}
+	.Medio #Medio-B {
+		width:152px;
+		background: linear-gradient(to right, #5BB947 50%, #4BA100 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		padding: 9px;
+	}
+	.Medio #Medio-B:hover {
+		background-position: right bottom;
+	}
+	.Medio #Medio-B a {
+		color: white;
+	}
+	.Servicios #Servicios-B {
+		width:152px;
+		background: linear-gradient(to right, #F9C416 50%, #F89000 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		padding: 9px;
+	}
+	.Servicios #Servicios-B:hover {
+		background-position: right bottom;
+	}
+	.Servicios #Servicios-B a {
+		color: white;
+	}
+	.Seguridad #Seguridad-B {
+		width:152px;
+		background: linear-gradient(to right, #999999 50%, #555555 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		padding: 9px;
+	}
+	.Seguridad #Seguridad-B:hover {
+		background-position: right bottom;
+	}
+	.Seguridad #Seguridad-B a {
+		color: white;
+	}
+	.Pro #Pro-B {
+		width:152px;
+		background: linear-gradient(to right, #17608D 50%, #113277 70%);
+		background-size: 200% 100%;
+		background-position: left bottom;
+		transition: all 1s ease;
+		padding: 9px;
+		margin-right: -15px;
+	}
+	.Pro #Pro-B:hover {
+		background-position: right bottom;
+	}
+	.Pro #Pro-B a {
+		color: white;
+	}
+}

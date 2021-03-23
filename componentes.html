@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>		
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 		<!-- Bootstrap 3.3.7 -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		
+        <link rel="stylesheet" type="text/css" href="webdefensora/css/main.css">
+		<link rel="stylesheet" type="text/css" href="webdefensora/css/responsive.css">
+		<link rel="stylesheet" type="text/css" href="webdefensora/css/variables.css">
+
 		<!-- Fonts -->
         <script src="https://kit.fontawesome.com/f3f3191f7e.js" crossorigin="anonymous"></script>
 		 
@@ -28,7 +34,7 @@
             position: relative;
             color: white;
             border: 1.5px solid white;
-            padding: 8px 64px 8px 22px;
+            padding: 6px 64px 6px 22px;
             border-radius: 50px;
             opacity: 1;
             transition: opacity 0.3s ease;
@@ -46,7 +52,32 @@
             height: 20px;
             position: absolute;
             right: 8px;
-            top: 8px;
+            top: 7px;
+        }
+
+        .btn-noticias {
+            position: relative;
+            color: #1f4766;
+            background: white;
+            padding: 6px 48px 6px 22px;
+            border-radius: 50px;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+            font-family: Roboto;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    
+        .btn-noticias:hover {
+            opacity: 0.6;
+        }
+
+        .btn-noticias img {
+            height: 13px;
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            color: #1f4766;
         }
 
         .blue-bg {
@@ -93,7 +124,6 @@
         .pt-3 {
             padding-top: 1rem;
         }
-
 
         .d-flex {
             display: flex;
@@ -185,13 +215,113 @@
             color: #6186a5;
         }
 
+        .card-programas01 {
+            background-size: cover;
+            background-position: center;
+            height: 245px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        .card-programas01-btn {
+            position: absolute;
+            bottom: 18px;
+            right: 24px;
+        }
+
+        .card-programas01-title {
+            font-family: Roboto;
+            font-weight: 500;
+            padding: 36px 60px 0px 36px;
+        }
+
+        .card-programas01-subtitle {
+            font-family: Roboto;
+            font-weight: 200;
+        }
+
+        .programas-item-flex {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .programas-item-flex h3 {
+            line-height: 0;
+        }
+
+        .blue-layer {
+            background-color: #00253bab;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .gold-layer {
+            background-color: #b7a165ab;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .cards-programas01 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 0px;
+        }
+
+        @media (min-width: 100px) and (max-width: 575px) {
+            .cards-programas01 {
+                grid-template-columns: 1fr;
+            }
+            .programas-item-flex h3 {
+                line-height: normal;
+                margin-bottom: 18px !important;
+            }
+            .programas-item-flex {
+                justify-content: center;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .cards-programas01 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .cards-programas01 {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .cards-programas01 {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .cards-programas01 {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+        }
         </style>
 	<body>
             <h1>Kit</h1>
             <div class="p-3 blue-bg">
                 <div>
                     <a class="btn btn-ghost" href="#">Ver más <img src="webdefensora/icons/flecha-vermas-10.svg" alt=""></a>
-                    <img src="webdefensora/vermas-snippet.png" alt="">
+                    <img style="display: none;" src="webdefensora/vermas-snippet.png" alt="">
                 </div>
                 <div>
                     <a class="social-circle" href="https://www.instagram.com/dpnargentina/" target="_blank" title="Instagram"><i class="fab fa-instagram" alt="Instagram"></i></a>
@@ -200,7 +330,7 @@
                     <a class="social-circle" href="https://twitter.com/DPNArgentina" target="_blank" title="Twitter"><i class="fab fa-twitter" alt="Twitter"></i></a>
                     <a class="social-circle" href="http://www.flickr.com/photos/defensordelpueblodelanacion/sets/" target="_blank" title="Flickr"><i class="fab fa-flickr" alt="Flickr"></i></a>
                     <a class="social-circle" href="https://open.spotify.com/show/4Ue17Jm8axMGMFXKsKSVZN" target="_blank" title="Spotify"><i class="fab fa-spotify" alt="Spotify"></i></a>
-                    <img src="webdefensora/redes-snippet.png" alt="">
+                    <img style="display: none;" src="webdefensora/redes-snippet.png" alt="">
                 </div>
             </div>
             <div class="half-color-bg">
@@ -247,7 +377,80 @@
                     </div> 
                 </a>
             </div>
-            <img src="webdefensora/links-snippet.png" style="margin-left: 182px;" alt="">  
-    </body>
-    
+            <img src="webdefensora/links-snippet.png" style="margin-left: 182px; display: none;" alt="">  
+            
+            
+            <div id="programas">
+                <div>
+                    <div>
+                        <div class="programas-item">
+                            <a href="transparencia.php">
+                                <h3>Transparencia y Gobierno Abierto</h3>
+                                <p>Acceso a la informaci&oacute;n p&uacute;blica</p>
+                            </a>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="cards-programas01">
+                <div class="card-programas01" style="background-image: url(webdefensora/images/observatorio-femicidios.jpg);">
+                    <div class="blue-layer">
+                        <h4 class="card-programas01-title">Observatorio de femicidios</h4>
+                        <div class="card-programas01-btn">
+                            <a class="btn btn-ghost" href="#">Ver más <img src="webdefensora/icons/flecha-vermas-10.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-programas01" style="background-image: url(webdefensora/images/diversidad-sexual.jpg);">
+                    <div class="gold-layer">
+                        <h4 class="card-programas01-title">Programa de Diversidad Sexual, Transversalización y Difusión</h4>
+                        <div class="card-programas01-btn">
+                            <a class="btn btn-ghost" href="#">Ver más <img src="webdefensora/icons/flecha-vermas-10.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-programas01" style="background-image: url(webdefensora/images/empresas-ddhh.jpg);">
+                    <div class="blue-layer">
+                        <h4 class="card-programas01-title">Empresas y Derechos Humanos</h4>
+                        <div class="card-programas01-btn">
+                            <a class="btn btn-ghost" href="#">Ver más <img src="webdefensora/icons/flecha-vermas-10.svg" alt=""></a>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="card-programas01" style="background-image: url(webdefensora/images/identidad-biologica.jpg);">
+                    <div class="gold-layer">
+                        <h4 class="card-programas01-title">Programa sobre Derecho a la Identidad Biológica</h4>
+                        <div class="card-programas01-btn">
+                            <a class="btn btn-ghost" href="#">Ver más <img src="webdefensora/icons/flecha-vermas-10.svg" alt=""></a>
+                        </div> 
+                    </div>
+                </div>
+
+
+                <div class="card-programas01" style="background-image: url(webdefensora/images/lagenteysudefensor.jpg);">
+                    <div class="blue-layer">
+                        <h4 class="card-programas01-title"><span class="card-programas01-subtitle">Tenés quien te escuche:</span> La gente y su defensor</h4>
+                        <div class="card-programas01-btn">
+                            <a class="btn btn-ghost" href="#">Ver más <img src="webdefensora/icons/flecha-vermas-10.svg" alt=""></a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <img src="webdefensora/programas01-snippet.png" style="display: none;" alt="">  
+
+            <br>
+            
+            <div id="programas">
+                    <div class="programas-item programas-item-flex">    
+                        <h3>Últimas Noticias</h3>
+                        <a class="btn btn-noticias" href="listagacetillas.php" alt="Ver todas las noticias" title="Ver todas las noticias">Ver todas las noticias <img src="webdefensora/icons/flecha-vermas-11.svg" alt=""></a>        
+                    </div>
+                
+            </div>
+        </body>
 </html>
