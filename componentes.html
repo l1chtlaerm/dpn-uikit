@@ -61,11 +61,39 @@
 
         .half-color-bg {
             background: linear-gradient(180deg, #e7e7e7 50%, white 50%);
+            vertical-align: middle; 
+            text-align: center;
+            padding: 16px;
         }
 
         .p-3 {
-            padding: 2rem;
+            padding: 1rem;
         }
+
+        .p-4 {
+            padding: 1.5rem;
+        }
+
+        .mt-2 {
+            margin-top: 0.5rem;
+        }
+
+        .mt-3 {
+            margin-top: 1rem;
+        }
+
+        .mt-4 {
+            margin-top: 1.5rem;
+        }
+
+        .pt-2 {
+            padding-top: 0.5rem;
+        }
+
+        .pt-3 {
+            padding-top: 1rem;
+        }
+
 
         .d-flex {
             display: flex;
@@ -89,33 +117,76 @@
         }
 
         .menu-areas-btn {
-            padding: 16px 24px;
-            width: 128px;
+            width: 124px;
+            height: 140px;
             background: white;
             box-shadow: 0 0 8px rgba(0,0,0,0.2);
-            border-radius: 12px;
-            margin: 8px;
+            transition: 0.3s ease;
+            border-radius: 16px;
+            margin: 4px;
             font-family: Roboto;
             font-weight: 700;
             font-size: 16px;
-            letter-spacing: 0.5px;
+            text-decoration: none;
+            vertical-align: middle; 
+            text-align: center;
+            display: inline-block;  
+        }
+
+        .menu-areas-btn:hover {
+            text-decoration: none;
+            box-shadow: 0 0 8px rgba(0,0,0,0.6);
         }
 
         .menu-areas-btn img {
             height: 48px;
         }
 
-        .menu-areas-btn p {
+        .menu-areas-btn-text {
             color: #3b617f;
+            padding: 0 0 0 0;
+            line-height: initial;
+            text-align: center;
+            letter-spacing: 0.25px;
         }
 
         .grupos-vulnerables {
             border: 2px solid #d4484f;
             color: #d4484f;
         }
+
+        .identidad-ciudadania {
+            border: 2px solid #e89e7b;
+            color: #e89e7b;
+        }
+
+        .salud-educacion {
+            border: 2px solid #74add9;
+            color: #74add9;
+        }
+
+        .medio-ambiente {
+            border: 2px solid #7cba60;
+            color: #7cba60;
+        }
+
+        .servicios-publicos {
+            border: 2px solid #f0d279;
+            color: #f0d279;
+        }
+
+        .seguridad-social {
+            border: 2px solid #bebebe;
+            color: #bebebe;
+        }
+
+        .ddhh-comunicacion {
+            border: 2px solid #6186a5;
+            color: #6186a5;
+        }
+
         </style>
 	<body>
-        <div class="container">
             <h1>Kit</h1>
             <div class="p-3 blue-bg">
                 <div>
@@ -131,20 +202,52 @@
                     <a class="social-circle" href="https://open.spotify.com/show/4Ue17Jm8axMGMFXKsKSVZN" target="_blank" title="Spotify"><i class="fab fa-spotify" alt="Spotify"></i></a>
                     <img src="webdefensora/redes-snippet.png" alt="">
                 </div>
-
             </div>
             <div class="half-color-bg">
-                <div class="d-flex">
-                    <div class="menu-areas-btn grupos-vulnerables">
-                        <div>
-                            <img src="webdefensora/icons/grupos-vulnerables-09.svg" alt="">
-                            <p>Grupos Vulnerables</p>
-                        </div> 
-                    </div>
-                    <img src="webdefensora/links-snippet.png" alt="">
-                </div>    
+                <a class="menu-areas-btn grupos-vulnerables mt-4" target="_blank" href="#" title="Grupos Vulnerables">
+                    <div class="mt-4">
+                        <img class="mt-3" src="webdefensora/icons/grupos-vulnerables-09.svg" alt="">
+                        <div class="menu-areas-btn-text mt-2">Grupos Vulnerables</div>
+                    </div> 
+                </a>
+                <a class="menu-areas-btn identidad-ciudadania mt-4" target="_blank" href="#" title="Identidad y Ciudadanía">
+                    <div class="mt-4">
+                        <img class="mt-3" src="webdefensora/icons/identidad-ciudadania-08.svg" alt="">
+                        <div class="menu-areas-btn-text mt-2">Identidad y Ciudadanía</div>
+                    </div> 
+                </a>
+                <a class="menu-areas-btn salud-educacion mt-4" target="_blank" href="#" title="Salud y Educación">
+                    <div class="mt-4">
+                        <img class="mt-3" src="webdefensora/icons/salud-educacion-07.svg" alt="">
+                        <div class="menu-areas-btn-text mt-2">Salud y Educación</div>
+                    </div> 
+                </a>
+                <a class="menu-areas-btn medio-ambiente mt-4" target="_blank" href="#" title="Medio Ambiente">
+                    <div class="mt-4">
+                        <img class="mt-3" src="webdefensora/icons/medioambiente-06.svg" alt="">
+                        <div class="menu-areas-btn-text mt-2">Medio Ambiente</div>
+                    </div> 
+                </a>
+                <a class="menu-areas-btn servicios-publicos mt-4" target="_blank" href="#" title="Servicios Públicos">
+                    <div class="mt-4">
+                        <img class="mt-3" src="webdefensora/icons/servicios-publicos-05.svg" alt="">
+                        <div class="menu-areas-btn-text mt-2">Servicios Públicos</div>
+                    </div> 
+                </a>
+                <a class="menu-areas-btn seguridad-social mt-4" target="_blank" href="#" title="Seguridad Social">
+                    <div class="mt-4">
+                        <img class="mt-3" src="webdefensora/icons/seguridad-social-04.svg" alt="">
+                        <div class="menu-areas-btn-text mt-2">Seguridad Social</div>
+                    </div> 
+                </a>
+                <a class="menu-areas-btn ddhh-comunicacion mt-4" target="_blank" href="#" title="DDHH y Comunicación">
+                    <div class="mt-4">
+                        <img class="mt-3" src="webdefensora/icons/ddhh-y-comunicacion-03.svg" alt="">
+                        <div class="menu-areas-btn-text mt-2">DDHH y Comunicación</div>
+                    </div> 
+                </a>
             </div>
-        </div>        
+            <img src="webdefensora/links-snippet.png" style="margin-left: 182px;" alt="">  
     </body>
     
 </html>
