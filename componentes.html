@@ -70,6 +70,7 @@
     
         .btn-noticias:hover {
             opacity: 0.6;
+            color: #1f4766;
         }
 
         .btn-noticias img {
@@ -115,6 +116,18 @@
 
         .mt-4 {
             margin-top: 1.5rem;
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .mb-3 {
+            margin-bottom: 1rem;
+        }
+
+        .mb-4 {
+            margin-bottom: 1.5rem;
         }
 
         .pt-2 {
@@ -279,6 +292,126 @@
             grid-gap: 0px;
         }
 
+        .index-content {
+            margin-left: 0;
+            margin-right: 0;  
+            display: flex;
+            flex-wrap: wrap;  
+        }
+
+        .index-content h3 {
+            font-family: Roboto;
+            font-weight: 700;
+            color: #3b617f;
+        }
+
+        .index-content p {
+            font-family: Roboto;
+            font-weight: 500;
+            color: #979797;
+        }
+
+        .index-content .video {
+            align-items: center;
+            display: flex;
+        }
+
+        .index-content .video iframe {
+            width:440px;
+	        height:290px;
+            border-radius: 18px;
+        }
+
+        .index-content-columns {
+            -webkit-columns: 2;
+            -moz-columns: 2;
+            columns: 2;
+            -webkit-column-gap: 4em;
+            -moz-column-gap: 4em;
+            column-gap: 4em;
+        }
+
+        .arrow-circle {
+            border-radius: 100%;
+            height: 32px;
+            width: 32px;
+            display: inline-block;
+            border: solid white 2px;
+            position: relative;
+        }
+
+        .arrow-circle img {
+            height: 20px;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+        }
+
+        .card-programas02 {
+            background-size: cover;
+            background-position: center;
+            height: 252px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 16px;
+            position: relative;
+            box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+        }
+
+        .card-programas02-footer {
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            bottom: 0;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 16px;
+            padding-right: 16px;
+            color: white;
+            text-decoration: none;
+            transition: ease 0.3s;
+        }
+
+        .card-programas02-footer:hover {
+            text-decoration: none;
+            color: white;
+            opacity: 0.5;
+        }
+
+        .card-programas02-text {
+            padding: 24px;
+            font-family: Roboto;
+            font-weight: 700;
+            color: #365974;
+            font-size: 20px;
+            line-height: 1;
+            text-align: center;
+        }
+
+        .cards-programas02 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 12px;
+            background-color: #EEEEEE;
+            padding: 80px; 
+        }
+
+        .card-programas02-subtitle {
+            font-family: Roboto;
+            font-weight: 400;
+        }
+
         @media (min-width: 100px) and (max-width: 575px) {
             .cards-programas01 {
                 grid-template-columns: 1fr;
@@ -290,29 +423,57 @@
             .programas-item-flex {
                 justify-content: center;
             }
-        }
-
-        @media (min-width: 576px) {
-            .cards-programas01 {
+            .index-content-columns {
+                -webkit-columns: 1;
+                -moz-columns: 1;
+                columns: 1;
+            }
+            .cards-programas02 {
                 grid-template-columns: 1fr;
+                padding: 80px 40px;
             }
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 576px) and (max-width: 767px){
             .cards-programas01 {
+                grid-template-columns: 1fr 1fr;
+            }
+            .index-content-columns {
+                -webkit-columns: 1;
+                -moz-columns: 1;
+                columns: 1;
+            }
+            .cards-programas02 {
+                grid-template-columns: 1fr 1fr;
+                padding: 80px 40px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .cards-programas01 {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .cards-programas02 {
                 grid-template-columns: 1fr 1fr;
             }
         }
 
-        @media (min-width: 992px) {
+        @media (min-width: 992px) and (max-width: 1199px){
             .cards-programas01 {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .cards-programas02 {
+                grid-template-columns: 1fr 1fr 1fr;
             }
         }
 
         @media (min-width: 1200px) {
             .cards-programas01 {
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+
+            .cards-programas02 {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
             }
         }
         </style>
@@ -333,6 +494,7 @@
                     <img style="display: none;" src="webdefensora/redes-snippet.png" alt="">
                 </div>
             </div>
+            
             <div class="half-color-bg">
                 <a class="menu-areas-btn grupos-vulnerables mt-4" target="_blank" href="#" title="Grupos Vulnerables">
                     <div class="mt-4">
@@ -381,18 +543,38 @@
             
             
             <div id="programas">
-                <div>
-                    <div>
                         <div class="programas-item">
                             <a href="transparencia.php">
                                 <h3>Transparencia y Gobierno Abierto</h3>
                                 <p>Acceso a la informaci&oacute;n p&uacute;blica</p>
                             </a>                           
                         </div>
-                    </div>
-                </div>
             </div>
             
+            <div class="row index-content mb-4">
+                <div class="col-xs-10 col-md-4 col-xs-offset-1 col-md-offset-2">
+                    <h3>&iquest;Qué es la Defensor&iacute;a del Pueblo de la Naci&oacute;n?</h3>
+                    <br>
+                    <p>La Defensor&iacute;a del Pueblo es un &oacute;rgano independiente instituido en el &aacute;mbito del
+                    Congreso de la Naci&oacute;n, que act&uacute;a con plena autonom&iacute;a funcional y sin recibir
+                    instrucciones de ninguna autoridad.</p>
+                    <p>Seg&uacute;n el art&iacute;culo 86 de la
+                    Constituci&oacute;n Nacional, el Defensor del Pueblo tiene legitimaci&oacute;n procesal, es decir
+                    que est&aacute; facultado para presentarse en sede judicial, y es designado y removido por el H.
+                    Congreso de la Naci&oacute;n con el voto de las dos terceras partes de los miembros presentes de
+                    cada una de las C&aacute;maras. El mismo durar&aacute; en su cargo cinco a&ntilde;os, pudiendo ser
+                    nuevamente designado por una sola vez.</p>
+                    <p>Adem&aacute;s es la &uacute;nica Instituci&oacute;n
+                    Nacional de Derechos Humanos (INDH) Argentina reconocida por Naciones Unidas. Este reconocimiento
+                    fue efectuado con el status clase A, el mayor posible, por adecuarse a los Principios de
+                    Par&iacute;s.</p>
+                    <p>La figura del Ombudsman proviene del derecho escandinavo y fue integrado al
+                    orden normativo argentino a trav&eacute;s de la reforma constitucional de 1994.</p>
+                </div>
+                <div class="col-xs-12 col-md-6 video p-3">
+                    <iframe title="Video Institucional" class="center-block" src="https://www.youtube.com/embed/0DEj_o_jWoQ" frameborder="0"></iframe>
+                </div>
+            </div>
 
             <div class="cards-programas01">
                 <div class="card-programas01" style="background-image: url(webdefensora/images/observatorio-femicidios.jpg);">
@@ -444,13 +626,178 @@
             <img src="webdefensora/programas01-snippet.png" style="display: none;" alt="">  
 
             <br>
+            <div class="row index-content">
+                <div class="col-xs-10 col-md-8 col-xs-offset-1 col-md-offset-2">
+                    <h3>La Defensoría en las Naciones Unidas</h3>
+                    <br>
+                    <div class="index-content-columns">
+                        <p>Nuestra Institución, como las demás INDHs, estuvo presente en la Asamblea Anual del GANHRI
+                            (Global Alliance of National Human Rights Institutions) en el seno de las Naciones Unidas.</p><p>En
+                            la reunión regional, propusimos una nueva mecánica para los ODS a fin de sistematizar más
+                            adecuadamente las presentaciones de las INDHs y, por esa vía, dotar de una mayor eficacia a la
+                            Agenda 2030. Se sumaron a esta iniciativa, luego de los referentes americanos incluidos los de
+                            América del Norte como México y Canadá, Alemania y Dinamarca; y completaron el cuadro representantes
+                            de otras regiones por lo cual, con el apoyo del Special Envoy del GANHRI, Prof. Alan Miller, se
+                            conformó un Grupo de Trabajo Agenda 2030, representado por Dinamarca, con relación a Europa;
+                            Indonesia por Asia; Ghana por África; y Argentina por América. Ello, con la coordinación general
+                            de Eva Grambye, Directora Ejecutiva del Instituto de Derechos Humanos Danés, quien,  además,
+                            comprometió ayuda económica de la Comunidad Europea.</p><p>Agregamos que la Asamblea trató diversos
+                            temas, entre los cuales debemos destacar el mantenimiento del status &ldquo;A&rdquo; de la
+                            Defensoría del Pueblo de la Nación en su carácter de única Institución Nacional de Derechos
+                            Humanos de nuestro país reconocida por las Naciones Unidas.</p>
+                    </div>
+                </div>
+		    </div>
+            <div class="cards-programas02">
+                <div>
+                    <div class="card-programas02" style="background-image: url(webdefensora/images/identidad-biologica.jpg);">
+                        <a class="blue-bg card-programas02-footer" href="">
+                            <div>Ver más</div> 
+                            <div class="arrow-circle">
+                                <img src="webdefensora/icons/flecha-vermas-10.svg" alt="">
+                            </div>    
+                        </a>
+                    </div>
+                    <div class="card-programas02-text">Programa sobre parto respetado para la prevención, asistencia y erradicación de la violencia obstétrica</div>    
+                </div>
+
+                <div>
+                    <div class="card-programas02" style="background-image: url(webdefensora/images/identidad-biologica.jpg);">
+                        <a class="blue-bg card-programas02-footer" href="">
+                            Ver más
+                            <div class="arrow-circle">
+                                <img src="webdefensora/icons/flecha-vermas-10.svg" alt="">
+                            </div>    
+                        </a>
+                    </div>
+                    <div class="card-programas02-text">Programa de Salud y Derechos Humanos</div>    
+                </div>
+
+                <div>
+                    <div class="card-programas02" style="background-image: url(webdefensora/images/identidad-biologica.jpg);">
+                        <a class="blue-bg card-programas02-footer" href="">
+                            Ver más
+                            <div class="arrow-circle">
+                                <img src="webdefensora/icons/flecha-vermas-10.svg" alt="">
+                            </div>    
+                        </a>
+                    </div>
+                    <div class="card-programas02-text">Desarrollo de objetivos<br>Desarrollo sostenible<br><div class="card-programas02-subtitle">Agenda 2030</div></div>    
+                </div>
+
+                <div>
+                    <div class="card-programas02" style="background-image: url(webdefensora/images/identidad-biologica.jpg);">
+                        <a class="blue-bg card-programas02-footer" href="">
+                            Buscar
+                            <div class="arrow-circle">
+                                <img src="webdefensora/icons/flecha-vermas-10.svg" alt="">
+                            </div>    
+                        </a>
+                    </div>
+                    <div class="card-programas02-text">Buscador de documentos de ODS</div>    
+                </div>
+            </div>
             
+              
+            <img src="webdefensora/programas02-snippet.png" style="display: none;" alt="">  
+
             <div id="programas">
                     <div class="programas-item programas-item-flex">    
                         <h3>Últimas Noticias</h3>
-                        <a class="btn btn-noticias" href="listagacetillas.php" alt="Ver todas las noticias" title="Ver todas las noticias">Ver todas las noticias <img src="webdefensora/icons/flecha-vermas-11.svg" alt=""></a>        
-                    </div>
-                
+                        <a class="btn btn-noticias" href="listagacetillas.php" alt="Ver todas las noticias" title="Ver todas las noticias">Ver todas las noticias <img src="webdefensora/icons/flecha-vermas-11.png" alt=""></a>        
+                    </div>    
             </div>
+
+            <style>
+                .btn-banners {
+                    width: 432px;
+                    height: 76px;
+                    border-radius: 50px;
+                    font-family: Roboto;
+                    font-size: 20px;
+                    line-height: 1.1;
+                    font-weight: 500;
+                    align-items: center;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 16px;
+                    padding-right: 10px;
+                    color: white;
+                    text-decoration: none;
+                    transition: ease 0.3s;
+                    background-color: #1A4363;
+                    margin: 24px 0px;
+                }
+
+                .btn-banners:hover {
+                    text-decoration: none;
+                    color: white;
+                    opacity: 0.5;
+                }
+
+                .arrow-circle-big {
+                    border-radius: 100%;
+                    height: 44px;
+                    width: 44px;
+                    display: inline-block;
+                    border: solid white 2px;
+                    position: relative;
+                }
+
+                .arrow-circle-big img {
+                    height: 20px;
+                    position: absolute;
+                    top: 10px;
+                    right: 9px;
+                }
+
+                .btn-banners-content {
+                    display: flex;
+                }
+
+                .btn-banners-content img {
+                    height: 48px;
+                    width: 48px;
+                    margin-right: 14px;
+                }
+
+                .btn-banners-subtitle {
+                    font-family: Roboto;
+                    font-weight: 200;
+                    font-size: 14px;
+                }
+
+                .banners-container {
+                    background-color: #eeeeee;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                }
+            </style>
+
+            <div class="banners-container">
+                <a class="btn-banners" href="">
+                    <div class="btn-banners-content">
+                        <img src="webdefensora/icons/informes-internacionales.svg" alt="">
+                        <div>Informes Internacionales<br>y Programas</div>        
+                    </div>
+                    <div class="arrow-circle-big">
+                        <img src="webdefensora/icons/flecha-vermas-10.svg" alt="">
+                    </div>    
+                </a>
+    
+                <a class="btn-banners" href="">
+                    <div class="btn-banners-content">
+                        <img src="webdefensora/icons/informes-anuales.svg" alt="">
+                        <div>Informes Anuales<br><div class="btn-banners-subtitle">Descarguelos Aquí</div></div>        
+                    </div>
+                    <div class="arrow-circle-big">
+                        <img src="webdefensora/icons/flecha-vermas-10.svg" alt="">
+                    </div>    
+                </a>    
+            </div>
+
+            <img src="webdefensora/botones-snippet.png" style="display: block;" alt="">  
+
         </body>
 </html>
