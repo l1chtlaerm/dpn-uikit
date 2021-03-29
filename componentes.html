@@ -118,6 +118,10 @@
             margin-top: 1.5rem;
         }
 
+        .mt-5 {
+            margin-top: 3rem;
+        }
+
         .mb-2 {
             margin-bottom: 0.5rem;
         }
@@ -128,6 +132,15 @@
 
         .mb-4 {
             margin-bottom: 1.5rem;
+        }
+
+        .mb-5 {
+            margin-bottom: 3rem;
+        }
+
+        .my-5 {
+            margin-bottom: 3rem;
+            margin-top: 3rem;
         }
 
         .pt-2 {
@@ -250,11 +263,13 @@
             font-family: Roboto;
             font-weight: 500;
             padding: 36px 60px 0px 36px;
+            color: white;
         }
 
         .card-programas01-subtitle {
             font-family: Roboto;
             font-weight: 200;
+            color: white;
         }
 
         .programas-item-flex {
@@ -410,6 +425,135 @@
         .card-programas02-subtitle {
             font-family: Roboto;
             font-weight: 400;
+        }
+
+        .btn-banners {
+            width: 432px;
+            height: 76px;
+            border-radius: 50px;
+            font-family: Roboto;
+            font-size: 20px;
+            line-height: 1.1;
+            font-weight: 500;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 16px;
+            padding-right: 10px;
+            color: white;
+            text-decoration: none;
+            transition: ease 0.3s;
+            background-color: #1A4363;
+            margin: 24px 0px;
+        }
+
+        .btn-banners:hover {
+            text-decoration: none;
+            color: white;
+            opacity: 0.5;
+        }
+
+        .arrow-circle-big {
+            border-radius: 100%;
+            height: 44px;
+            width: 44px;
+            display: inline-block;
+            border: solid white 2px;
+            position: relative;
+        }
+
+        .arrow-circle-big img {
+            height: 20px;
+            position: absolute;
+            top: 10px;
+            right: 9px;
+        }
+
+        .btn-banners-content {
+            display: flex;
+        }
+
+        .btn-banners-content img {
+            height: 48px;
+            width: 48px;
+            margin-right: 14px;
+        }
+
+        .btn-banners-subtitle {
+            font-family: Roboto;
+            font-weight: 200;
+            font-size: 14px;
+        }
+
+        .banners-container {
+            background-color: #eeeeee;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 4rem;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .btn-blue {
+            position: relative;
+            color: #1A4363;
+            border: 2px solid #1A4363;
+            padding: 6px 48px 6px 18px;
+            border-radius: 50px;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+            font-family: Roboto;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+        }
+    
+        .btn-blue:hover {
+            opacity: 0.6;
+            color: #1A4363;
+        }
+
+        .btn-blue img {
+            height: 14px;
+            position: absolute;
+            right: 8px;
+            top: 10px;
+        }
+
+        .card-noticias {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 300px;
+            min-height: 450px;
+            margin-left: 24px;
+            margin-right: 24px;
+            margin-bottom: 18px;
+        }
+
+        .cards-noticias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card-noticias-text {
+            margin-bottom: 18px;
+        }
+
+        .card-noticias-text h3 {
+            margin-bottom: 18px;
+        }
+
+        .card-noticias-btn {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .links-container-border {
+            border-top: 2px solid white;
+            padding: 32px 0px;
         }
 
         @media (min-width: 100px) and (max-width: 575px) {
@@ -650,7 +794,7 @@
 		    </div>
             <div class="cards-programas02">
                 <div>
-                    <div class="card-programas02" style="background-image: url(webdefensora/images/identidad-biologica.jpg);">
+                    <div class="card-programas02" style="background-image: url(webdefensora/images/1.parto.jpg);">
                         <a class="blue-bg card-programas02-footer" href="">
                             <div>Ver más</div> 
                             <div class="arrow-circle">
@@ -662,7 +806,7 @@
                 </div>
 
                 <div>
-                    <div class="card-programas02" style="background-image: url(webdefensora/images/identidad-biologica.jpg);">
+                    <div class="card-programas02" style="background-image: url(webdefensora/images/2.salud.jpg);">
                         <a class="blue-bg card-programas02-footer" href="">
                             Ver más
                             <div class="arrow-circle">
@@ -674,7 +818,7 @@
                 </div>
 
                 <div>
-                    <div class="card-programas02" style="background-image: url(webdefensora/images/identidad-biologica.jpg);">
+                    <div class="card-programas02" style="background-image: url(webdefensora/images/3.sostenible.jpg);">
                         <a class="blue-bg card-programas02-footer" href="">
                             Ver más
                             <div class="arrow-circle">
@@ -686,7 +830,7 @@
                 </div>
 
                 <div>
-                    <div class="card-programas02" style="background-image: url(webdefensora/images/identidad-biologica.jpg);">
+                    <div class="card-programas02" style="background-image: url(webdefensora/images/4.documentos.jpg);">
                         <a class="blue-bg card-programas02-footer" href="">
                             Buscar
                             <div class="arrow-circle">
@@ -701,80 +845,46 @@
               
             <img src="webdefensora/programas02-snippet.png" style="display: none;" alt="">  
 
-            <div id="programas">
+            <div id="programas" class="mb-5">
                     <div class="programas-item programas-item-flex">    
                         <h3>Últimas Noticias</h3>
                         <a class="btn btn-noticias" href="listagacetillas.php" alt="Ver todas las noticias" title="Ver todas las noticias">Ver todas las noticias <img src="webdefensora/icons/flecha-vermas-11.png" alt=""></a>        
                     </div>    
             </div>
 
-            <style>
-                .btn-banners {
-                    width: 432px;
-                    height: 76px;
-                    border-radius: 50px;
-                    font-family: Roboto;
-                    font-size: 20px;
-                    line-height: 1.1;
-                    font-weight: 500;
-                    align-items: center;
-                    display: flex;
-                    justify-content: space-between;
-                    padding-left: 16px;
-                    padding-right: 10px;
-                    color: white;
-                    text-decoration: none;
-                    transition: ease 0.3s;
-                    background-color: #1A4363;
-                    margin: 24px 0px;
-                }
 
-                .btn-banners:hover {
-                    text-decoration: none;
-                    color: white;
-                    opacity: 0.5;
-                }
+            <div class="cards-noticias">
+                <div class="card-noticias">
+                    <div class="card-noticias-text">
+                        <h3>La Defensoría del Pueblo de la Nación considera imprescindible analizar la capacidad económico-financiera de los usuarios para definir incrementos en la tarifa del gas</h3>
+                        <p>La Defensoría del Pueblo de la Nación participó hoy de la Audiencia Pública -convocada por la Secretaría de Energía- para definir los incrementos de la tarifa del gas.</p>         
+                    </div>
+                    <div class="card-noticias-btn">
+                        <a class="btn btn-blue" href="#">Leer más <img src="webdefensora/icons/flecha-vermas-11.png" alt=""></a>
+                    </div>
+                </div>
 
-                .arrow-circle-big {
-                    border-radius: 100%;
-                    height: 44px;
-                    width: 44px;
-                    display: inline-block;
-                    border: solid white 2px;
-                    position: relative;
-                }
+                <div class="card-noticias">
+                    <div class="card-noticias-text">
+                        <h3>La Defensoría del Pueblo de la Nación participó en la restitución de restos de ancestros de la Comunidad Indígena de Punta Querandí</h3>
+                        <p>Participaron representantes de la comunidad, José Benitez del Consejo Ciba por el pueblo Qom, Magdalena Odarda presidenta del Instituto Nacional de Asuntos Indígenas (INAI), Leonor Acuña directora del INAPL, Guido Lorenzino Defensor del Pueblo de la provincia de Buenos Aires, Matías Moreno Subsecretario de Derechos Humanos, provincia de Buenos Aires, Patrimonio Cultural de la Provincia de Buenos Aires, Subsecretaría de Derechos Humanos del Municipio de Tigre, entre otras autoridades. El acto se realizó el sábado 6 de marzo en el Instituto Nacional de Antropología y Pensamiento Americano (INAPL).</p>         
+                    </div>
+                    <div class="card-noticias-btn">
+                        <a class="btn btn-blue" href="#">Leer más <img src="webdefensora/icons/flecha-vermas-11.png" alt=""></a>
+                    </div>
+                </div>
 
-                .arrow-circle-big img {
-                    height: 20px;
-                    position: absolute;
-                    top: 10px;
-                    right: 9px;
-                }
-
-                .btn-banners-content {
-                    display: flex;
-                }
-
-                .btn-banners-content img {
-                    height: 48px;
-                    width: 48px;
-                    margin-right: 14px;
-                }
-
-                .btn-banners-subtitle {
-                    font-family: Roboto;
-                    font-weight: 200;
-                    font-size: 14px;
-                }
-
-                .banners-container {
-                    background-color: #eeeeee;
-                    display: flex;
-                    justify-content: space-around;
-                    flex-wrap: wrap;
-                }
-            </style>
-
+                <div class="card-noticias">
+                    <div class="card-noticias-text">
+                        <h3>Durante el 2020 hubo 5 femicidios por semana según el Observatorio de Femicidios de la Defensoría del Pueblo de la Nación.</h3>
+                        <p>Según el registro del OFDPN, en el año 2020 se cometieron 295 femicidios, de los cuales 219 se cometieron específicamente durante el Aislamiento Social Preventivo y Obligatorio que comenzó el 20 de marzo y se extendió hasta fin de año.</p>         
+                    </div>
+                    <div class="card-noticias-btn">
+                        <a class="btn btn-blue" href="#">Leer más <img src="webdefensora/icons/flecha-vermas-11.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+              
             <div class="banners-container">
                 <a class="btn-banners" href="">
                     <div class="btn-banners-content">
@@ -797,7 +907,80 @@
                 </a>    
             </div>
 
-            <img src="webdefensora/botones-snippet.png" style="display: block;" alt="">  
+            <style>
+
+            </style>
+
+            <section id="links">
+                <div class="container links-container-border">
+                    <div class="row">
+                        <div class="col-xs-12">
+                        
+                            <div class="col-xs-6 col-sm-3 link-item">
+                            <a href="http://www.oacnudh.org/" target="_blank"><img class="img-responsive center-block" data-hover="images/ban-1-hover.png" src="images/ban-1.png" alt="OACNUDH"></a>
+                            </div>
+                            
+                            <div class="col-xs-6 col-sm-3 link-item">
+                            <a href="http://www.adpra.org.ar" target="_blank"><img class="img-responsive center-block" data-hover="images/ban-11-hover.png" src="images/ban-11.png" alt="ADPRA"></a>
+                            </div>
+                        
+                            <div class="col-xs-6 col-sm-3 link-item">
+                            <a href="http://www.greenpeace.org/argentina/es/" target="_blank"><img class="img-responsive center-block" data-hover="images/ban-3-hover.png" src="images/ban-3.png" alt="Greenpeace Argentina"></a>
+                            </div>
+                            
+                            <div class="col-xs-6 col-sm-3 link-item">
+                            <a href="http://www.portalfio.org" target="_blank"><img class="img-responsive center-block" data-hover="images/ban-12-hover.png" src="images/ban-12.png" alt="Portal FIO"></a>
+                            </div>
+                            
+                            <div class="col-xs-6 col-sm-3 link-item">
+                            <a href="http://www.un.org/es/index.html" target="_blank"><img class="img-responsive center-block" data-hover="images/ban-5-hover.png" src="images/ban-5.png" alt="Naciones Unidas"></a>
+                            </div>
+                            
+                            <div class="col-xs-6 col-sm-3 link-item">
+                            <a href="http://www.paho.org/arg/" target="_blank"><img class="img-responsive center-block" data-hover="images/ban-6-hover.png" src="images/ban-6.png" alt="PAHO"></a>
+                            </div>
+                            
+                            <div class="col-xs-6 col-sm-3 link-item">
+                            <a href="http://www.who.int/es/" target="_blank"><img class="img-responsive center-block" data-hover="images/ban-7-hover.png" src="images/ban-7.png" alt="OMS"></a>
+                            </div>
+                            
+                            <div class="col-xs-6 col-sm-3 link-item">
+                            <a href="http://www.missingchildren.org.ar/" target="_blank"><img class="img-responsive center-block" data-hover="images/ban-8-hover.png" src="images/ban-8.png" alt="Missing Children"></a>
+                            </div>
+                            
+                            <div class="col-xs-6 col-sm-3 link-item">
+                            <a href="http://farn.org.ar/" target="_blank"><img class="img-responsive center-block" data-hover="images/ban-9-hover.png" src="images/ban-9.png" alt="Farn"></a>
+                            </div>
+                            
+                            <div class="col-xs-6 col-sm-3 link-item">
+                            <a href="http://www.falgbt.org/" target="_blank"><img class="img-responsive center-block" data-hover="images/ban-10-hover.png" src="images/ban-10.png" alt="FALGBT"></a>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contacto">
+                <div class="container">
+                    <div class="row">
+                        <div class="clearfix visible-xs"></div>
+                        <div class="col-xs-12 col-sm-12 col-lg-12">
+                            <div class="datos">
+                            <p class="fa fa-clock-o fa-fw icon"></p> Horario de atención: Lunes a Viernes de 10 a 17hs. <span> | </span>
+                            <p class="fa fa-building-o fa-fw icon"></p> Sede central: Suipacha 365 (C1008AAG). CABA, Argentina. <span> | </span>
+                            <p class="fa fa-phone fa-fw icon"></p> 0810 333 3762<span> - </span>Fax: (+54 11) 4819 1581
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="container">
+                    <h5>&copy; <?=date('Y')?> | Defensor&iacute;a del Pueblo de la Nación Argentina</h5>
+                </div>
+            </footer>
+            
+            <img src="webdefensora/botones-snippet.png" style="display: none;" alt="">  
 
         </body>
 </html>

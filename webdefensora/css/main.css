@@ -33,6 +33,18 @@
 body{
 	font-family:'Roboto',sans-serif;
 }
+
+p {
+	font-weight: 500;
+	color: #979797;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	color: #3b617f;
+}
+
+
 header .navbar{
 	margin-bottom:0;
 }
@@ -1139,7 +1151,6 @@ margin-top: 185px;
 }
 #links {
 	background-color:#eee;
-	padding: 20px 0;
 }
 #links .link-item{
 	margin-bottom:15px;
